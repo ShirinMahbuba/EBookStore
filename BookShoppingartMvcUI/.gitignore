@@ -1,0 +1,16 @@
+# Visual Studio cache/temp files
+.vs/
+bin/
+obj/
+*.vsidx
+FileContentIndex/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
