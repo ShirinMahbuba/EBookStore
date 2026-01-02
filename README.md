@@ -1,6 +1,6 @@
 # EBookStore
 How to logged-in with admin account?? 🧑‍💻🧑‍💻
-Click on the link named login and get logged-in with these credentials.
+
 
 username: admin@gmail.com
 
