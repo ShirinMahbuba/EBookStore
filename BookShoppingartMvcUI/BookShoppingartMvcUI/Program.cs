@@ -1,4 +1,5 @@
 using BookShoppingartMvcUI.Data;
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,11 +21,10 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Uncomment it when you run the project first time, It will registered an admin
-/*using (var scope = app.Services.CreateScope())
+using (var scope = app.Services.CreateScope())
 {
     await DbSeeder.SeedDefaultData(scope.ServiceProvider);
-}*/
+}
 
 
 // Configure the HTTP request pipeline.
@@ -44,6 +44,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
